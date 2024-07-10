@@ -42,9 +42,9 @@ Se estiver, prossiga. Se não estiver, copie o código acima, cole no arquivo e 
 
 Se você conseguiu fazer isso, você conseguiu instalar com sucesso o SDL2. Para certificar que tudo está funcionando corretamente, siga as instruções abaixo para compilar o projeto pelo Bash do MSYS2
 
-##Compilando o projeto
+## Compilando o projeto
 
-###Usando o MSYS2 no VS Code
+### Usando o MSYS2 no VS Code
 
 Para simplificar a sua vida, eis um tutorial rápido de como usar o Bash do MSYS2 no VS COde
 
@@ -92,7 +92,7 @@ Seu arquivo deve ficar mais ou menos assim (não precisar estar exatamente assim
 }
 ```
 
-###Compilando o projeto pelo MSYS2
+### Compilando o projeto pelo MSYS2
 Até que enfim!
 
 - Se você NÃO estiver usando o MSYS2 pelo VS Code, use o comando ```cd``` para abrir a pasta do seu projeto
