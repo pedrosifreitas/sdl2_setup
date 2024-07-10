@@ -91,11 +91,14 @@ Seu arquivo deve ficar mais ou menos assim (não precisar estar exatamente assim
 	}
 }
 ```
-Agora abra o terminal do VS Code
-<picture>
-  <source srcset="https://github.com/pedrosifreitas/sdl2_setup/assets/125893015/c5ff454f-c070-45fd-a9b7-631089c2e073.png">
-  <source srcset="https://github.com/pedrosifreitas/sdl2_setup/assets/125893015/eac08150-d1e5-4797-ab4d-480bc482c070.png">
-</picture>
+Agora abra o terminal do VS Code:
+
+- Clique na opção "Novo Perfil":
+![terminal](https://github.com/pedrosifreitas/sdl2_setup/assets/125893015/3f3d3e19-39bc-4c3e-b7ec-c3a01a0f66c0)
+
+- Escolha o perfil MSYS2 MINGW:
+![etrminal](https://github.com/pedrosifreitas/sdl2_setup/assets/125893015/0b40f988-37a2-442c-bc05-0871251d30f9)
+
 
 ### Compilando o projeto pelo MSYS2
 Até que enfim!
