@@ -96,6 +96,7 @@ Agora abra o terminal do VS Code:
 - Clique na opção "Novo Perfil":
 ![terminal](https://github.com/pedrosifreitas/sdl2_setup/assets/125893015/3f3d3e19-39bc-4c3e-b7ec-c3a01a0f66c0)
 
+
 - Escolha o perfil MSYS2 MINGW:
 ![etrminal](https://github.com/pedrosifreitas/sdl2_setup/assets/125893015/0b40f988-37a2-442c-bc05-0871251d30f9)
 
