@@ -10,10 +10,10 @@ Esse repositório serve apenas como setup básico para um projeto SDL2 e não po
 - Abra o arquivo e siga com o processo de instalação. Sugiro que use as configurações padrões do instalador.
 
 - Uma vez instalado, abra a pasta onde o MSYS2 foi instalado (geralmente fica em ```C:/msys2```), abra o programa "mingw64.exe" e use os seguintes comandos (você deve colar com ```SHIFT + INSERT``` no Bash):
-  -```pacman -Syu```
-    -Atualizará o MSYS2 se houver atualizações pendentes
-  -```pacman -S git mingw-w64-x86_64-gcc mingw-w64-x86_64-toolchain mingw64/mingw-w64-x86_64-SDL2 mingw64/mingw-w64-x86_64-SDL2_mixer mingw64/mingw-w64-x86_64-SDL2_image mingw64/mingw-w64-x86_64-SDL2_ttf mingw64/mingw-w64-x86_64-SDL2_net mingw64/mingw-w64-x86_64-cmake make```
-    -Instalará o pacote do SDL no seu computador
+  - ```pacman -Syu```
+    - Atualizará o MSYS2 se houver atualizações pendentes
+  - ```pacman -S git mingw-w64-x86_64-gcc mingw-w64-x86_64-toolchain mingw64/mingw-w64-x86_64-SDL2 mingw64/mingw-w64-x86_64-SDL2_mixer mingw64/mingw-w64-x86_64-SDL2_image mingw64/mingw-w64-x86_64-SDL2_ttf mingw64/mingw-w64-x86_64-SDL2_net mingw64/mingw-w64-x86_64-cmake make```
+    - Instalará o pacote do SDL no seu computador
 
 - Uma vez instalado, instale esse repositório, se não o fez ainda, e o abra no Visual Studio Code (clique com o botão direito e selecione "Abrir com Code"). Lembre-se de instalar a extensão C/C++ no Code! Abra o arquivo ```c_cpp_proprieties.json``` no Code e certifique-se de que o arquivo está EXATAMENTE desse jeito:
 ```
