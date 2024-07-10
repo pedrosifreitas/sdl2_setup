@@ -91,6 +91,11 @@ Seu arquivo deve ficar mais ou menos assim (não precisar estar exatamente assim
 	}
 }
 ```
+Agora abra o terminal do VS Code
+<picture>
+  <source srcset="https://github.com/pedrosifreitas/sdl2_setup/assets/125893015/c5ff454f-c070-45fd-a9b7-631089c2e073.png">
+  <source srcset="https://github.com/pedrosifreitas/sdl2_setup/assets/125893015/eac08150-d1e5-4797-ab4d-480bc482c070.png">
+</picture>
 
 ### Compilando o projeto pelo MSYS2
 Até que enfim!
