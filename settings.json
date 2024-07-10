@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "sdl_timer.h": "c"
+    },
+    "c-cpp-compile-run.c-flags": "-o bin/teste.exe $(pkg-config --cflags --libs sdl2)",
+    "c-cpp-compile-run.output-location": "bin",
+    "c-cpp-compile-run.cpp-flags": "-o bin/teste.exe $(pkg-config --cflags --libs sdl2)",
+    "c-cpp-compile-run.c-compiler": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+    "c-cpp-compile-run.cpp-compiler": "C:\\msys64\\mingw64\\bin\\g++.exe",
+    "c-cpp-compile-run.run-in-external-terminal": true
+}
