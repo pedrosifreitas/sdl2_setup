@@ -1,0 +1,15 @@
+#arquivos que serão ignorados pelo rastreador do Git
+#não há necessidade em mexer em nada aqui
+
+#arquivos de compilação
+bin/
+
+#arquivos referentes à biblioteca do SDL
+lib/
+
+#arquivos de conf. do VS Code
+.vscode/
+
+#arquivos de texto (fora o LICENSE.txt)
+*.txt
+!LICENSE.txt

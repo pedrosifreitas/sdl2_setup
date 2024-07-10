@@ -1,0 +1,55 @@
+Esse daqui é um setup para simplificar o uso do SDL
+Leia o arquivo "Instalação do SDL" antes de usar
+
+Esse setup já tem um repositório do Git, e você pode abri-lo usando o comando "git init" no Git enquanto estiver na pasta do setup. Ele só possui um commit, intitulado "Setup", e você pode vê-lo usando o comando "git log". Dessa forma, você consegue clonar o repositório para usar em múltiplos projetos. Sugiro que instale o Git e dê uma pesquisada em como ele funciona e pra quê serve, mas não é necessário para esse projeto (note que "Git" e "Github" são duas coisas completamente diferentes).
+
+Arquivos aleatórios:
+
+.gitignore: diz ao Git quais arquivos do projeto ele deve ignorar ao adicioná-los ao repositório. Se você não estiver usando o Git, não é necessário fazer nenhuma alteração nele;
+
+LICENSE.txt: é a licença do seu projeto.
+
+Arquivos .c principais:
+
+main.c: é o arquivo fonte principal, obviamente. ELe trata de rodar as funções do arquivo fonte game.c de forma correta. Não é necessário fazer nenhuma alteração;
+
+game.c: é o arquivo central do jogo, onde todas as operações principais são executadas. Nele, existem as seguintes funções e variáveis locais:
+	
+	-clock_t o_time: tempo inicial de execução (t0);
+	
+	-clock_t deltatime(void): retorna a variação de tempo desde o tempo inicial da execução 		do programa até o tempo atual (Δt = tf - t0);
+		
+	-void init(void): função chamada uma única vez ao abrir o programa. Ela se trata de 			iniciar o SDL e abrir a janela do jogo, principalmente, mas você pode usá-la para outras 		coisas;
+	
+	-void upd(int app_run): função chamada uma vez a cada frame update. Serve para fazer as 		operações principais e recebe um inteiro chamado app_run, que serve para dizer ao 			computador se o programa ainda está rodando;
+	
+	-void draw(void): função chamada um vez a cada frame update, logo após "upd(void)", e 			serve para desenhar os gráficos do jogo;
+	
+Pastas:
+
+Essa é a organização padrão das pastas. Você pode organizá-las de outra forma, se prefirir.
+
+assets: possui arquivos customizáveis.
+
+	\graps: possui arquivos de elementos gráficos, como imagens (sprites ou texturas), 			modelos 3D, shaders, entre outros
+
+		\sprite: possui arquivos de sprite
+		\tex: possui arquivos de textura
+		\font: possui arquivos .ttf
+		\mod: possui modelos 3D
+		\3d: possui arquivos relacionados a jogos 3D (materiais ou shaders, por exemplo)
+
+	\audio: possui arquivos de áudio
+
+		\mus: música
+		\sfx: efeitos sonoros
+
+	\data: possui arquivos .json. Pode ser que você queira organizá-los de forma que melhor 		sirva para o seu jogo
+
+		\lang: possui arquivos .json com a tradução de certos elementos do jogo
+
+src: deve possuir todos os arquivos de código (com exceção aos arquivos main.c e game.c)
+
+bin: pasta de lixeira, onde os arquivos resultantes da compilação do programa estarão.
+	
+	\SDL2.dll: arquivo DLL do SDL2 necessário para a execução do programa (deve ser 			distribuído junto com ele)	

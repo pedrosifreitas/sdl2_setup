@@ -1,0 +1,106 @@
+Esse projeto é meio que um setup pro SDL. Mas para ele funcionar, tem que instalar o SDL primeiro.
+
+Note que você só precisa instalá-lo uma única vez. Depois de instalado, você pode usá-lo em qualquer projeto.
+
+
+----Instalação:----
+
+Instale o MSYS2 (em https://github.com/msys2/msys2-installer/releases/tag/nightly-x86_64)
+
+Após a instalá-lo, vá na pasta msys64 e abra o programa "mingw64.exe". Isso abrirá o Bash do MSYS2. No Bash, escreva os seguinte comandos (use Shift + Insert para colar no Bash):
+
+	pacman -Syu
+
+	pacman -S git mingw-w64-x86_64-gcc mingw-w64-x86_64-toolchain mingw64/mingw-w64-x86_64-SDL2 mingw64/mingw-w64-x86_64-SDL2_mixer mingw64/mingw-w64-x86_64-SDL2_image mingw64/mingw-w64-x86_64-SDL2_ttf mingw64/mingw-w64-x86_64-SDL2_net mingw64/mingw-w64-x86_64-cmake make 
+
+
+Agora, clique com o botão direito do mouse na pasta do projeto e clique em "Abrir com Code". Como as configurações necessárias para incluir o SDL já está incluida nesta pasta, não há necessidade em configurar nada, mas só para ter certeza total de que tudo está correto, certifique-se que o arquivo c_cpp_properties.json, na pasta .vscode, possui essas informações:
+
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\msys64\\mingw64\\include\\SDL2"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
+
+Se sim, não é necessário fazer nada. Caso contrário, copie e cole isso no arquivo pelo VS e salve.
+
+Em teoria, isso deveria ser tudo. Tente compilar o programa conforme explicado abaixo.
+
+
+----Compilação:----
+
+Quando você for compilar o programa, digite esse comando no MSYS2...:
+
+	cd <diretório_do_projeto>
+
+
+...e compile-o com esse comando:
+
+	gcc main.c -o bin/teste.exe $(pkg-config --cflags --libs sdl2)
+
+
+
+Para poder usar o MSYS2 no terminal do VS Code:
+
+- Abra o VS Code
+- Clique no ícone da engrenagem, e então em Configurações
+- Pesquise por "terminal.integrated.profiles.windows" na barra de pesquisa do menu de Configurações
+- Clique em "Editar em settings.json"
+- No arquivo settings.json, coloque entre as chaves "{}" depois de "terminal.integrated.profiles.windows", copie e cole:
+
+	"MSYS2 MINGW64": {
+            "path": "cmd.exe",
+            "args": [
+                "/c",
+                "C:\\msys64\\msys2_shell.cmd -defterm -here -no-start -mingw64"
+            ]
+        },
+
+O seu arquivo settings.json deve ficar mais ou menos assim (não precisa estar EXATAMENTE assim):
+
+{
+	"terminal.integrated.profiles.windows": {
+        	"MSYS2 MINGW64": {
+            		"path": "cmd.exe",
+            		"args": [
+                		"/c",
+                		"C:\\msys64\\msys2_shell.cmd -defterm -here -no-start -mingw64"
+            		]
+        	},
+
+        	"PowerShell": {
+            		"source": "PowerShell",
+            		"icon": "terminal-powershell"
+        	},
+        	"Command Prompt": {
+            		"path": [
+                		"${env:windir}\\Sysnative\\cmd.exe",
+                		"${env:windir}\\System32\\cmd.exe"
+            		],
+            		"args": [],
+            		"icon": "terminal-cmd"
+        	},
+	}
+}
+
+Desta forma, você poderá usar o MSYS2 dentro do terminal do VS Code para compilar o jogo
+
+
+
+"Posso usar a extensão C/C++ Compiler para compilar sem ter que digitar o comando do GCC?"
+R: NÃO! Por algum motivo, ele dá erro quando você tenta compilar por ele. Imagino que isso ocorra por que ele não está usando o MSYS2 como compilador principal e, por causa disso, não está lendo as flags corretamente. Eu já tentei configurar ele pelo VS Code para compilar pelo MSYS2, mas sem sucesso.

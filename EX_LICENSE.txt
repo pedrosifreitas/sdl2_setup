@@ -1,0 +1,28 @@
+-----------------------------|     Source code and software:     |-----------------------------
+
+Copyright <ano> <nome>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+-----------------------------|        Art and music used:       |------------------------------
+
+The art and music used in "<titulo>©" <ano> by <nome> is licensed under Creative Commons <licença da CC>
+
+
+-----------------------------------------------------------------------------------------------
+
+Esse arquivo serve para licenciar o jogo
+Para exemplificar, usei a licença MIT para o código do jogo (e o jogo em si) e a atribuição da CC para a arte usada no jogo (sim, você deve licenciá-los separadamente)
+Note que você não precisa usar ESSAS licenças especificamente. Se quiser usar outras, fique a vontade
+
+Sobre as licenças:
+
+A licença do MIT diz que o programa pode ser usado, modificado e distribuído por qualquer um sem que haja cobranças (primeiro parágrafo), contanto que essa licença seja distribuída junto (segundo parágrafo). Entretanto, não haverá garantia sobre o bom funcionamento do software, e se ele não funcionar direito não é problema do criador (terceiro parágrafo, em maiúsculo).
+
+A atribuição da CC varia entre licenças, mas geralmente é um licença aberta que permite que outros usem sua obra contanto que haja a atribuição necessária, com algumas condições extras a seu critério (ex.: não pode usar para meios comerciais, não pode fazer adaptações, etc.).
+Vale lembrar que as licenças da CC são somente para obras artísticas e é desaconselhável usá-las para programas. Por isso, use-as apenas para licenciar as artes e músicas usadas no jogo.
