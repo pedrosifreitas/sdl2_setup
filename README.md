@@ -46,7 +46,7 @@ Se você conseguiu fazer isso, você conseguiu instalar com sucesso o SDL2. Para
 
 ### Usando o MSYS2 no VS Code
 
-Para simplificar a sua vida, eis um tutorial rápido de como usar o Bash do MSYS2 no VS COde
+Para simplificar a sua vida, eis um tutorial rápido de como usar o Bash do MSYS2 no VS Code
 
 - Clique no ícone de engrenagem :gear: no canto inferior esquerdo e selecione configurações
 - Pesquise por ```terminal.integrated.profiles.windows``` na barra de pesquisa do menu de Configurações
@@ -64,7 +64,7 @@ Para simplificar a sua vida, eis um tutorial rápido de como usar o Bash do MSYS
 //...
 ```
 
-Seu arquivo deve ficar mais ou menos assim (não precisar estar exatamente assim):
+Seu arquivo deve ficar mais ou menos assim (não precisa estar exatamente assim):
 ```
 {
 	"terminal.integrated.profiles.windows": {
